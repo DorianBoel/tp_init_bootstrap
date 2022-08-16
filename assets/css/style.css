@@ -1,0 +1,21 @@
+.carousel-indicators li {
+    background-color: dimGray;
+    height: 6px;
+}
+
+.carousel-indicators>.active {
+    background-color: silver;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: gray;
+}
+
+.carousel-control-next-icon{
+    border-radius: 5px 50% 50% 5px;
+}
+
+.carousel-control-prev-icon {
+    border-radius: 50% 5px 5px 50%;
+}

@@ -3,14 +3,9 @@
 	<head>	<!-- En-tête de la page -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-			crossorigin="anonymous"
-		>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style.css">
 		<title>Exemple d'utilisation de Bootstrap</title> <!-- Ce titre s'affiche dans l'onglet du navigateur -->
 	</head>
 	<body> 	<!-- Corps de la page -->
@@ -63,7 +58,7 @@
 						<img
 							class="mx-auto d-block img-fluid"
 							style="max-width:150px;"
-							src="./images/bootstrap-logo.jpg"
+							src="assets/images/bootstrap-logo.jpg"
 							alt="Logo deBootstrap"
 						/>
 					</p>
@@ -79,19 +74,19 @@
 						</ul>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img class="mx-auto d-block img-fluid" src="./images/album.png" alt="Exemple de site réalisé avec Bootstrap style album"/>
+								<img class="mx-auto d-block img-fluid" src="assets/images/album.png" alt="Exemple de site réalisé avec Bootstrap style album"/>
 							</div>
 							<div class="carousel-item">
-								<img class="mx-auto d-block img-fluid" src="./images/carousel.jpg" alt="Exemple de site réalisé avec Bootstrap avec carousel"/>
+								<img class="mx-auto d-block img-fluid" src="assets/images/carousel.jpg" alt="Exemple de site réalisé avec Bootstrap avec carousel"/>
 							</div>
 							<div class="carousel-item">
-								<img class="mx-auto d-block img-fluid" src="./images/form.jpg" alt="Exemple de site réalisé avec Bootstrap avec formulaire"/>
+								<img class="mx-auto d-block img-fluid" src="assets/images/form.jpg" alt="Exemple de site réalisé avec Bootstrap avec formulaire"/>
 							</div>
 							<div class="carousel-item">
-								<img class="mx-auto d-block img-fluid" src="./images/pricing.png" alt="Exemple de site réalisé avec Bootstrap style commercial"/>
+								<img class="mx-auto d-block img-fluid" src="assets/images/pricing.png" alt="Exemple de site réalisé avec Bootstrap style commercial"/>
 							</div>
 							<div class="carousel-item">
-								<img class="mx-auto d-block img-fluid" src="./images/monitor.jpg" alt="Exemple de site réalisé avec Bootstrap style monitoring"/>
+								<img class="mx-auto d-block img-fluid" src="assets/images/monitor.jpg" alt="Exemple de site réalisé avec Bootstrap style monitoring"/>
 							</div>
 							<a class="carousel-control-prev" href="#idCarousel" data-slide="prev">
 								<span class="carousel-control-prev-icon"></span>
@@ -112,15 +107,12 @@
 							<i class="fa fa-search"></i> Rechercher
 						</div>
 						<div class="card-body">
-							<form method="post" action="#">
+							<form id="searchForm" action="">
 								<div class="form-group">
 									<input class="form-control" type="text" name="recherche" id="recherche" />
 								</div>
 								<div class="form-group">
-									<button
-										type="button" class="btn-primary form-control" 
-										data-toggle="modal" data-target="#myModal"
-									>
+									<button type="button" class="btn-primary form-control" data-target="#myModal">
 										Rechercher
 									</button>
 								</div>
@@ -198,7 +190,7 @@
 					</div>
 					<!-- Modal footer -->
 					<div class="modal-footer">
-						<button type="button" class="btn btn-danger" data-dismiss="modal">
+						<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="validateSearch">
 							Fermer
 						</button>
 					</div>
@@ -208,23 +200,9 @@
 		<!-- Fin boite de dialogue -->
 
 		<!-- Scripts -->
-		<script 
-			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-			crossorigin="anonymous">
-		</script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-			crossorigin="anonymous">
-		</script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-			crossorigin="anonymous">
-		</script>
-		<!-- <script src="js/jquery-slim.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script> -->
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/jquery-slim.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/validate.jquery.js"></script>
 	</body>
 </html>
