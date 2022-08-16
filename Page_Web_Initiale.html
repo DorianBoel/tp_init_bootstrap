@@ -2,12 +2,13 @@
 <html lang="fr">
 	<head>	<!-- En-tête de la page -->
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-
-		scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.co
-		m/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-
-		MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLP
-		MO" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous"
+		>
 		<title>Exemple d'utilisation de Bootstrap</title> <!-- Ce titre s'affiche dans l'onglet du navigateur -->
 	</head>
 	<body> 	<!-- Corps de la page -->
@@ -19,7 +20,31 @@
 		<!-- Fin HEADER -->
 
 		<!-- MENU PRINCIPAL -->
-		<div><a href="#">Accueil</a> - <a href="#">Cours HTML</a> - <a href="#">Cours CSS</a> - <a href="#">Cours PHP</a> - <a href="#">Cours Javascript</a></div>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<a class="navbar-brand" href="#">Accueil</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" 
+        aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Cours HTML</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Cours CSS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Cours PHP</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Cours Javascript</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Fin du MENU PRINCIPAL -->
 
 		<!-- ZONE PRINCIPALE -->
 		<div>	
@@ -59,20 +84,30 @@
 				<p>Site très instructif, c'est devenu pour moi une référence en matière de développement Web. Le design est génial. H. CHISMAN</p>
 			</div>
 		</div>
-		<div>&copy; 2018 - Ne pas prendre exemple !</div>
+		<!-- PIED DE PAGE -->
+		<div class="jumbotron text-center" style="margin-bottom:0">
+			&copy; 2018 - Vous pouvez maintenant prendre exemple !
+		</div>
+		<!-- Fin PIED DE PAGE -->
 
 		<!-- Scripts -->
-		<script src="https://code.jquery.com/jquery-
-		3.3.1.slim.min.js" integrity="sha384-
-		q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6ji
-		zo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/
-		1.14.3/umd/popper.min.js" integrity="sha384-
-		ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm
-		49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.
-		3/js/bootstrap.min.js" integrity="sha384-
-		ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEUL
-		Ty" crossorigin="anonymous"></script>
+		<script 
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous">
+		</script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			crossorigin="anonymous">
+		</script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+			crossorigin="anonymous">
+		</script>
+		<!-- <script src="js/jquery-slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script> -->
 	</body>
 </html>
